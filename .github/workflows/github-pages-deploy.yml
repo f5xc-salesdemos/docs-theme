@@ -4,6 +4,8 @@ on:
     branches: [main]
     paths:
       - 'docs/**'
+  schedule:
+    - cron: '0 7 * * *'
   workflow_dispatch:
 
 permissions:
