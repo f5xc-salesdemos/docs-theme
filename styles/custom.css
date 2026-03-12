@@ -272,19 +272,26 @@ html .mermaid-container svg {
 }
 
 .sl-markdown-content .screenshot-pair img:hover,
-.sl-markdown-content .screenshot-pair starlight-image-zoom-zoomable > img:hover {
+.sl-markdown-content
+  .screenshot-pair
+  starlight-image-zoom-zoomable
+  > img:hover {
   box-shadow: var(--f5-shadow-high);
 }
 
 /* Dark mode (default): hide light variant */
 :root:not([data-theme="light"]) .screenshot-pair .screenshot-light,
-:root:not([data-theme="light"]) .screenshot-pair starlight-image-zoom-zoomable:has(.screenshot-light) {
+:root:not([data-theme="light"])
+  .screenshot-pair
+  starlight-image-zoom-zoomable:has(.screenshot-light) {
   display: none;
 }
 
 /* Light mode: hide dark variant */
 :root[data-theme="light"] .screenshot-pair .screenshot-dark,
-:root[data-theme="light"] .screenshot-pair starlight-image-zoom-zoomable:has(.screenshot-dark) {
+:root[data-theme="light"]
+  .screenshot-pair
+  starlight-image-zoom-zoomable:has(.screenshot-dark) {
   display: none;
 }
 
