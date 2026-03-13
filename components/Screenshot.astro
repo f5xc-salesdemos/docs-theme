@@ -10,7 +10,7 @@ interface Props {
 const { light, dark, alt, width, height } = Astro.props;
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
-const resolve = (src?: string) => src && src.startsWith('/') ? `${base}${src}` : src;
+const resolve = (src?: string) => (src && src.startsWith('/') ? `${base}${src}` : src);
 
 const lightSrc = resolve(light);
 const darkSrc = resolve(dark);
