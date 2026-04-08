@@ -16,7 +16,9 @@ CVE-2026-4539
 
 # Vite 7.3.1 — transitive dependency via astro/starlight
 # Fixed in 7.3.2; upgrade blocked by astro compatibility
+# Impact: Zero — vite dev server is not exposed in production
+# Expiry: 2026-06-30 — re-evaluate when upstream updates vite
 # Reviewed: 2026-04-08
 CVE-2026-39363
-GHSA-v2wj-q39q-566r
-GHSA-4w7w-66w2-5vf9
+CVE-2026-39364
+CVE-2026-39365
