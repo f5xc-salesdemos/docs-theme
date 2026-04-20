@@ -220,7 +220,8 @@ const defaultMegaMenuItems: MegaMenuItem[] = [
             },
             {
               label: 'mvp',
-              description: 'Capability program that amplifies F5 XC account teams with an agentic subject matter expert',
+              description:
+                'Capability program that amplifies F5 XC account teams with an agentic subject matter expert',
               href: 'https://f5xc-salesdemos.github.io/mvp/',
               icon: resolveIcon('f5xc:ai_assistant_logo'),
             },
