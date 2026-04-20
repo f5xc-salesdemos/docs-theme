@@ -218,6 +218,12 @@ const defaultMegaMenuItems: MegaMenuItem[] = [
               href: 'https://f5xc-salesdemos.github.io/devcontainer/',
               icon: resolveIcon('hashicorp-flight:docker-color'),
             },
+            {
+              label: 'xcsh Product Plan',
+              description: 'Executive product plan and engineering roadmap for xcsh',
+              href: 'https://f5xc-salesdemos.github.io/mvp/',
+              icon: resolveIcon('f5xc:ai_assistant_logo'),
+            },
           ],
         },
         {
@@ -272,7 +278,7 @@ const defaultMegaMenuItems: MegaMenuItem[] = [
               icon: resolveIcon('f5xc:ai_assistant_logo'),
             },
             {
-              label: 'XCSh',
+              label: 'xcsh',
               description: 'AI-powered development CLI with persistent sessions and native Rust tooling',
               href: 'https://f5xc-salesdemos.github.io/xcsh/',
               icon: resolveIcon('f5xc:ai_assistant_logo'),
