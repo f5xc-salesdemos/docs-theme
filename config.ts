@@ -1,11 +1,11 @@
 import react from '@astrojs/react';
 import starlight from '@astrojs/starlight';
 import type { StarlightPlugin } from '@astrojs/starlight/types';
+import starlightLlmsTxt from '@f5xc-salesdemos/starlight-llms-txt';
 import type { AstroIntegration } from 'astro';
 import { defineConfig } from 'astro/config';
 import starlightHeadingBadges from 'starlight-heading-badges';
 import starlightImageZoom from 'starlight-image-zoom';
-import starlightLlmsTxt from '@f5xc-salesdemos/starlight-llms-txt';
 import starlightMegaMenu from 'starlight-mega-menu';
 import starlightPageActions from 'starlight-page-actions';
 import { starlightIconsPlugin } from 'starlight-plugin-icons';
