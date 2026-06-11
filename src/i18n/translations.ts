@@ -14,7 +14,7 @@ export const translations: Record<string, Record<string, string>> = {
   fr: {
     'f5xc.breadcrumb.home': 'Accueil',
     'f5xc.breadcrumb.edit': 'Modifier',
-    "f5xc.breadcrumb.label": "Fil d'Ariane",
+    'f5xc.breadcrumb.label': "Fil d'Ariane",
     'f5xc.scrollToTop': 'Retour en haut',
   },
   es: {
