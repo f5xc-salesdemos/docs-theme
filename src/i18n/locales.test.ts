@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { f5xcDefaultLocales, defaultLocale } from './locales';
+import { defaultLocale, f5xcDefaultLocales } from './locales';
 
 describe('f5xcDefaultLocales', () => {
   it('contains 13 locales', () => {
@@ -13,7 +13,7 @@ describe('f5xcDefaultLocales', () => {
   });
 
   it('has BCP-47 lang property for each locale', () => {
-    for (const [slug, config] of Object.entries(f5xcDefaultLocales)) {
+    for (const [_slug, config] of Object.entries(f5xcDefaultLocales)) {
       expect(config.lang).toBeTruthy();
       expect(config.label).toBeTruthy();
     }
@@ -32,9 +32,9 @@ describe('f5xcDefaultLocales', () => {
   });
 
   it('has RTL dir only for Arabic', () => {
-    expect(f5xcDefaultLocales['ar'].dir).toBe('rtl');
-    expect(f5xcDefaultLocales['en'].dir).toBeUndefined();
-    expect(f5xcDefaultLocales['fr'].dir).toBeUndefined();
+    expect(f5xcDefaultLocales.ar.dir).toBe('rtl');
+    expect(f5xcDefaultLocales.en.dir).toBeUndefined();
+    expect(f5xcDefaultLocales.fr.dir).toBeUndefined();
   });
 
   it('includes all expected locales', () => {
