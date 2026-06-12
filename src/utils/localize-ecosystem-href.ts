@@ -1,4 +1,4 @@
-import { VALID_SLUGS, bcp47ToSlug } from '@f5xc-salesdemos/i18n-core';
+import { bcp47ToSlug, VALID_SLUGS } from '@f5xc-salesdemos/i18n-core';
 
 const ECOSYSTEM_HOST = 'f5xc-salesdemos.github.io';
 
