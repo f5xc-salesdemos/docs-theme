@@ -15,6 +15,7 @@ import starlightPageActions from 'starlight-page-actions';
 import { starlightIconsPlugin } from 'starlight-plugin-icons';
 import starlightScrollToTop from 'starlight-scroll-to-top';
 import starlightVideosPlugin from 'starlight-videos';
+import { BCP47_TO_SLUG, SLUG_LIST } from '@f5xc-salesdemos/i18n-core';
 import f5xcDocsTheme from './index.ts';
 import { defaultLocale as f5xcDefaultLocale, f5xcDefaultLocales } from './src/i18n/locales.ts';
 import {
@@ -700,8 +701,8 @@ export function createF5xcDocsConfig(options: F5xcDocsConfigOptions = {}) {
 
   const localeHeadScripts: HeadEntry[] = [];
   if (resolvedLocales) {
-    const langToSlugMap = Object.fromEntries(Object.entries(resolvedLocales).map(([slug, cfg]) => [cfg.lang, slug]));
-    const slugSet = JSON.stringify(Object.keys(resolvedLocales));
+    const langToSlugMap = BCP47_TO_SLUG;
+    const slugSet = JSON.stringify(SLUG_LIST);
 
     localeHeadScripts.push({
       tag: 'script',
