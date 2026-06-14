@@ -4,7 +4,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import matter from 'gray-matter';
 
-const ECOSYSTEM_ROOT = path.resolve(import.meta.dirname, '..', '..', '..');
+const ECOSYSTEM_ROOT = path.resolve(import.meta.dirname, '..', '..');
 const LOCALES = ['fr', 'es', 'de', 'pt-br', 'ja', 'ko', 'zh-cn', 'zh-tw', 'ar', 'it', 'hi', 'th'];
 const CONCURRENCY = 8;
 
